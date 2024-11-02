@@ -1,0 +1,17 @@
+{
+  "canisters": {
+    "ebook_filter_canisters_backend": {
+      "candid": "src/ebook_filter_canisters_backend/ebook_filter_canisters_backend.did",
+      "package": "ebook_filter_canisters_backend",
+      "type": "rust"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
