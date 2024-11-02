@@ -1,7 +1,3 @@
-Here’s the documentation with the limitations section added concisely:
-
----
-
 # 📚 Decentralized Book Filter: A Safer Way to Read
 
 **Author:** Janice Gathoga
@@ -32,7 +28,7 @@ Imagine you’re a teacher or parent wanting to share a book with younger reader
 
    ```bash
    git clone https://github.com/jan-ice17/decentralized-book-filter.git
-   cd decentralized-book-filter/ebook_filter_canisters
+   cd ebook_filter_canisters/
    ```
 
 2. **Start the Internet Computer**:  
