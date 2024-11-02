@@ -1,0 +1,6 @@
+service : {
+    fetch_uploaded_book: () -> (text) query;
+    filter_content: () -> (text) query;
+    get_filtered_words: () -> (vec text) query;
+    add_filtered_word: (text) -> (text);
+}

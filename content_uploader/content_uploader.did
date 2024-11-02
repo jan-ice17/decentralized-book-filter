@@ -1,0 +1,4 @@
+service : {
+    upload_ebook: (text) -> (text);
+    get_ebook: () -> (text) query;
+}

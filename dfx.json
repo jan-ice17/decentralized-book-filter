@@ -1,17 +1,29 @@
 {
   "canisters": {
-    "ebook_filter_canisters_backend": {
-      "candid": "src/ebook_filter_canisters_backend/ebook_filter_canisters_backend.did",
-      "package": "ebook_filter_canisters_backend",
-      "type": "rust"
+    "content_uploader": {
+      "type": "rust",
+      "package": "content_uploader",
+      "candid": "content_uploader/content_uploader.did",
+      "source": ["content_uploader/src/lib.rs"],
+      "wasm": "content_uploader/target/wasm32-unknown-unknown/release/content_uploader.wasm",
+      "build": "cd content_uploader && cargo build --target wasm32-unknown-unknown --release"
+    },
+    "content_filter": {
+      "type": "rust",
+      "package": "content_filter",
+      "candid": "content_filter/content_filter.did",
+      "source": ["content_filter/src/lib.rs"],
+      "wasm": "content_filter/target/wasm32-unknown-unknown/release/content_filter.wasm",
+      "build": "cd content_filter && cargo build --target wasm32-unknown-unknown --release"
+    },
+    "content_manager": {
+      "type": "rust",
+      "package": "content_manager",
+      "candid": "content_manager/content_manager.did",
+      "source": ["content_manager/src/lib.rs"],
+      "wasm": "content_manager/target/wasm32-unknown-unknown/release/content_manager.wasm",
+      "build": "cd content_manager && cargo build --target wasm32-unknown-unknown --release"
     }
   },
-  "defaults": {
-    "build": {
-      "args": "",
-      "packtool": ""
-    }
-  },
-  "output_env_file": ".env",
   "version": 1
 }

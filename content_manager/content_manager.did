@@ -1,0 +1,5 @@
+service : {
+    set_filter_mode: (text) -> (text);
+    get_filter_mode: () -> (text) query;
+    fetch_and_filter_content: () -> (text);
+}

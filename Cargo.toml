@@ -1,5 +1,3 @@
 [workspace]
-members = [
-    "src/ebook_filter_canisters_backend"
-]
+members = [ "content_filter", "content_manager", "content_uploader"]
 resolver = "2"
